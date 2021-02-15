@@ -8,8 +8,8 @@ run:
 	ulimit -S -v 65000000
 	LOGURU_LEVEL=INFO \
 	${python} main.py \
-	--load auto
-	# --demonstrations /media/wassname/Storage5/projects2/3ST/diy_bullet_conveyor/agents/pytorch-soft-actor-critic/data/rllib_demo
+	--load auto \
+	--demonstrations /media/wassname/Storage5/projects2/3ST/diy_bullet_conveyor/agents/pytorch-soft-actor-critic/data/rllib_demo
 
 play:
 	${python} \

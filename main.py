@@ -143,7 +143,7 @@ if __name__ == "__main__":
         from torchsummaryX import summary
         summary(policy.model, {'obs':torch.zeros(2, policy.observation_space.shape[0])})
 
-        for i in range(args.stop_iters):
+        for i in range(2):
             result = trainer.train()
             print(pretty_print(result))
 
